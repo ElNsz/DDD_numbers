@@ -1,0 +1,11 @@
+*{font-size:15px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+.frase_inicial h1{
+    font-size: 2.2em;
+}
+.frase_inicial p{
+    margin-top: 10px;
+}
+.principal label, .numeros a{
+    color:#f0f0f0
+}

@@ -1,0 +1,14 @@
+*{margin:0;padding:0;}
+
+.principal{
+    background-color: #1c5566;
+}
+.frase_inicial{
+    margin-top: 30px;
+}
+.input_num{
+    width: 150px;
+}
+.numeros{
+    list-style-type: none;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script DDD</title>
+
+    <!--Todos os CSS-->
+    <link rel="stylesheet" href="./assets/css/pad.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/text.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="container flex">
+            <div class="frase_inicial">
+                <H1>Bem vindo.</H1>
+                <p>Aqui é uma página para quem tem curiosidade em saber quem mais no Brasil tem seu número, porém
+                    com DDD diferente.</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="principal">
+            <div class="container flex column ">
+                <div>
+                    <form method="post" action="" onsubmit="enviar(); return false;">
+                        <label>Digite aqui seu número sem DDD com o 9 na frente:
+                            <input class="input_num" type="tel" required="" minlength="8" maxlength="9">
+                        </label>
+                        <input class="bttn" type="submit" value="Listar Numeros" name="confirmar">
+                    </form>
+                </div>
+                <div class="lista-numeros">
+                    <ul>
+                        <li class="numeros"><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./assets/js/ddd.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

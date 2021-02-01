@@ -1,0 +1,14 @@
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.container{
+    width: 100vw;
+    max-width: 1024px;
+    height: 200px;
+    margin: auto;
+    height: auto;
+    /*border: 1px solid #f00;*/
+}
