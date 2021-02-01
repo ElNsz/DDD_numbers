@@ -11,32 +11,89 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/text.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!--VueJs-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>          <!--Desenvolvimento-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>-->               <!--Produção-->
 </head>
 
 <body>
     <header>
         <div class="container flex">
             <div class="frase_inicial">
-                <H1>Bem vindo.</H1>
-                <p>Aqui é uma página para quem tem curiosidade em saber quem mais no Brasil tem seu número, porém
-                    com DDD diferente.</p>
+                <H1>{{bv}}</H1>
+                <p>{{desc}}</p>
             </div>
         </div>
     </header>
     <main>
         <section class="principal">
-            <div class="container flex column ">
+            <div class="listaNum container flex column ">
                 <div>
-                    <form method="post" action="" onsubmit="enviar(); return false;">
+                    <form method="post" action="">
                         <label>Digite aqui seu número sem DDD com o 9 na frente:
                             <input class="input_num" type="tel" required="" minlength="8" maxlength="9">
                         </label>
-                        <input class="bttn" type="submit" value="Listar Numeros" name="confirmar">
+                        <button class="bttn" v-on:click.prevent='enviar'>Listar Números</button>
                     </form>
                 </div>
-                <div class="lista-numeros">
-                    <ul>
-                        <li class="numeros"><a href=""></a></li>
+                <div id="clip" class="lista_numeros">
+                    <ul class="numeros">
+                        <li><a class="a" href=""></a></li>
+                        <li><a class="b" href=""></a></li>
+                        <li><a class="c" href=""></a></li>
+                        <li><a class="d" href=""></a></li>
+                        <li><a class="e" href=""></a></li>
+                        <li><a class="f" href=""></a></li>
+                        <li><a class="g" href=""></a></li>
+                        <li><a class="h" href=""></a></li>
+                        <li><a class="i" href=""></a></li>
+                        <li><a class="j" href=""></a></li>
+                        <li><a class="k" href=""></a></li>
+                        <li><a class="l" href=""></a></li>
+                        <li><a class="m" href=""></a></li>
+                        <li><a class="n" href=""></a></li>
+                        <li><a class="o" href=""></a></li>
+                        <li><a class="p" href=""></a></li>
+                        <li><a class="q" href=""></a></li>
+                        <li><a class="r" href=""></a></li>
+                        <li><a class="s" href=""></a></li>
+                        <li><a class="t" href=""></a></li>
+                        <li><a class="u" href=""></a></li>
+                        <li><a class="v" href=""></a></li>
+                        <li><a class="w" href=""></a></li>
+                        <li><a class="x" href=""></a></li>
+                        <li><a class="y" href=""></a></li>
+                        <li><a class="z" href=""></a></li>
+                        <li><a class="aa" href=""></a></li>
+                        <li><a class="ab" href=""></a></li>
+                        <li><a class="ac" href=""></a></li>
+                        <li><a class="ad" href=""></a></li>
+                        <li><a class="ae" href=""></a></li>
+                        <li><a class="af" href=""></a></li>
+                        <li><a class="ag" href=""></a></li>
+                        <li><a class="ah" href=""></a></li>
+                        <li><a class="ai" href=""></a></li>
+                        <li><a class="aj" href=""></a></li>
+                        <li><a class="ak" href=""></a></li>
+                        <li><a class="al" href=""></a></li>
+                        <li><a class="am" href=""></a></li>
+                        <li><a class="an" href=""></a></li>
+                        <li><a class="ao" href=""></a></li>
+                        <li><a class="ap" href=""></a></li>
+                        <li><a class="aq" href=""></a></li>
+                        <li><a class="ar" href=""></a></li>
+                        <li><a class="as" href=""></a></li>
+                        <li><a class="at" href=""></a></li>
+                        <li><a class="au" href=""></a></li>
+                        <li><a class="av" href=""></a></li>
+                        <li><a class="aw" href=""></a></li>
+                        <li><a class="ax" href=""></a></li>
+                        <li><a class="ay" href=""></a></li>
+                        <li><a class="az" href=""></a></li>
+                        <li><a class="ba" href=""></a></li>
+                        <li><a class="bb" href=""></a></li>
+                        <li><a class="bc" href=""></a></li>
                     </ul>
                 </div>
             </div>
