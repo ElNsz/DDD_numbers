@@ -6,6 +6,22 @@
 .frase_inicial p{
     margin-top: 10px;
 }
-.principal label, .lista_numeros a{
+.principal label{
     color:#f0f0f0
 }
+.lista_numeros a{
+    color: black;
+}
+.alert{
+    color: white;
+    text-align: center;
+}
+.closebtn{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 20px;
+}
+.closebtn:hover {
+    color: black;
+  }

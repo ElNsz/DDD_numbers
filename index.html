@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
     <!--VueJs-->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>          <!--Desenvolvimento-->
-    <!--<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>-->               <!--Produção-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>-->          <!--Desenvolvimento-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>               <!--Produção-->
 </head>
 
 <body>
@@ -28,14 +28,21 @@
     </header>
     <main>
         <section class="principal">
-            <div class="listaNum container flex column ">
-                <div>
-                    <form method="post" action="">
-                        <label>Digite aqui seu número sem DDD com o 9 na frente:
-                            <input class="input_num" type="tel" required="" minlength="8" maxlength="9">
-                        </label>
-                        <button class="bttn" v-on:click.prevent='enviar'>Listar Números</button>
-                    </form>
+            <div class="listaNum container">
+                <div class="ListaNum--topo flex column">
+                    <div class="form">
+                        <form method="post" action="">
+                            <label class="label_num">Digite aqui seu número sem DDD com o 9 na frente:<br>
+                                <input class="input_num" type="tel" maxlength="9">
+                            </label>
+
+                            <button class="bttn" v-on:click.prevent='enviar'>Listar Números</button>
+                        </form>
+                    </div>
+                    <div class="alert" >
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                       {{alert}}
+                    </div>
                 </div>
                 <div id="clip" class="lista_numeros">
                     <ul class="numeros">

@@ -3,12 +3,53 @@
 .principal{
     background-color: #1c5566;
 }
+.form{
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.input_num{
+    margin-left:30%;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 30px;
+    height: 30px;
+    width: 120px;
+}
+.bttn{
+    margin: auto;
+}
 .frase_inicial{
     margin-top: 30px;
 }
-.input_num{
-    width: 150px;
-}
-.numeros{
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    margin-bottom: 15px;
+    display: none;
+  }
+  .closebtn {
+    margin-left: 15px;
+    float: right;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+.numeros li{
     list-style-type: none;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.bttn{
+    display: block;
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+.lista_numeros{
+    background-color: azure;
+}
+.lista_numeros{
+    margin-bottom: 20px;
 }
