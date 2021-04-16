@@ -30,13 +30,13 @@
     background-color: #f44336;
     margin-bottom: 15px;
     display: none;
-  }
-  .closebtn {
+}
+.closebtn {
     margin-left: 15px;
     float: right;
     cursor: pointer;
     transition: 0.3s;
-  }
+}
 .numeros li{
     list-style-type: none;
     margin-left: 10px;

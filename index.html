@@ -6,17 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Script DDD</title>
 
-    <!--Todos os CSS-->
     <link rel="stylesheet" href="./assets/css/pad.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/text.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
-    <!--VueJs-->
-    <!--<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>-->          <!--Desenvolvimento-->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>               <!--Produção-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
-
 <body>
     <header>
         <div class="container flex">
@@ -32,8 +28,8 @@
                 <div class="ListaNum--topo flex column">
                     <div class="form">
                         <form method="post" action="">
-                            <label class="label_num">Digite aqui seu número sem DDD com o 9 na frente:<br>
-                                <input class="input_num" type="tel" maxlength="9">
+                            <label class="label_num">{{label}}<br>
+                                <input onblur="checkNumber(this.value);" class="input_num" type="tel" maxlength="9">
                             </label>
 
                             <button class="bttn" v-on:click.prevent='enviar'>Listar Números</button>
@@ -46,19 +42,11 @@
                 </div>
                 <div id="clip" class="lista_numeros">
                     <ul v-if="mostrar" class="numeros">
-                        <li v-for="item in lista"><a :href="['https://wa.me/+55'+item.ddd+numeros]">
-                            https://wa.me/+55{{ item.ddd }}{{numeros}}
-                        </a></li>
+                        <li v-for="item in lista"><a :href="[waMe+item.ddd+numeros]">{{waMe}}{{ item.ddd }}{{numeros}}</a></li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
-    <script src="./assets/js/ddd.js"></script>
     <script src="./assets/js/index.js"></script>
-</body>
-
-</html>
+</body></html>
